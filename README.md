@@ -1,4 +1,3 @@
-````
 # Executive Sales Performance & Decision Intelligence Dashboard
 
 ### Transforming transactional sales data into executive-level performance intelligence and actionable business decisions.
@@ -36,16 +35,16 @@ Without an integrated analytical environment, it can be difficult to:
 
 A six-page Power BI solution was designed around a guided analytical workflow:
 
-**Executive Summary**
-↓
-**Sub-Category Performance**
-↓
-**Product Performance Investigation**
-↓
-**Shipping & Logistics Analysis**
-↓
-**Customer Segment Analysis**
-↓
+**Executive Summary**  
+↓  
+**Sub-Category Performance**  
+↓  
+**Product Performance Investigation**  
+↓  
+**Shipping & Logistics Analysis**  
+↓  
+**Customer Segment Analysis**  
+↓  
 **Executive Insights & Recommendations**
 
 The report moves users from high-level performance monitoring to detailed investigation and finally to an executive decision-support layer.
@@ -335,6 +334,8 @@ global-superstore-decision-intelligence/
     └── 06-executive-insight.png
 ```
 
+---
+
 # 📚 Dataset
 
 **Global Superstore | 2011–2014**
@@ -354,5 +355,3 @@ GitHub: **@miracleogar**
 ### Project Focus
 
 **Business Intelligence • Data Analytics • Power BI • DAX • Decision Intelligence**
-
-````
