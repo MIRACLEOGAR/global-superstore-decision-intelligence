@@ -317,19 +317,19 @@ The solution moves beyond conventional KPI reporting by connecting:
 
 # 📁 Repository Structure
 
-global-superstore-decision-intelligence
+```text
+global-superstore-decision-intelligence/
 │
-├─ README.md
-├─ Executive-Sales-Decision-Intelligence.pbix
+├── README.md
+├── Executive-Sales-Decision-Intelligence.pbix
 │
-└─ assets
-   ├─ 01-executive-summary.png
-   ├─ 02-sub-category-performance.png
-   ├─ 03-product-performance.png
-   ├─ 04-shipping-logistics.png
-   ├─ 05-customer-segment.png
-   └─ 06-executive-insight.png
-
+└── assets/
+    ├── 01-executive-summary.png
+    ├── 02-sub-category-performance.png
+    ├── 03-product-performance.png
+    ├── 04-shipping-logistics.png
+    ├── 05-customer-segment.png
+    └── 06-executive-insight.png
 ---
 
 # 📚 Dataset
