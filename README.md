@@ -1,4 +1,4 @@
-# Executive Sales Performance & Decision Intelligence Dashboard
+# 📊 Executive Sales Performance & Decision Intelligence Dashboard
 
 ### Transforming transactional sales data into executive-level performance intelligence and actionable business decisions.
 
@@ -6,11 +6,11 @@
 
 ---
 
-## 📊 Project Overview
+## 📌 Project Overview
 
-The **Executive Sales Performance & Decision Intelligence Dashboard** is a six-page interactive Business Intelligence solution developed in Microsoft Power BI using the **Global Superstore dataset covering 2011–2014**.
+The **Executive Sales Performance & Decision Intelligence Dashboard** is a six-page interactive Business Intelligence solution developed in **Microsoft Power BI** using the **Global Superstore dataset covering 2011–2014**.
 
-The project combines performance monitoring, profitability analysis, interactive investigation, DAX-driven classification, contextual insights, and executive recommendations within one connected analytical workflow.
+The solution combines performance monitoring, profitability analysis, interactive investigation, DAX-driven classification, contextual insights, and executive recommendations.
 
 > **What happened → Why it happened → Where the opportunity or risk exists → What action should be taken**
 
@@ -18,14 +18,14 @@ The project combines performance monitoring, profitability analysis, interactive
 
 ## 🎯 Business Problem
 
-Organizations can generate large volumes of sales data across products, customers, regions, categories, and shipping methods while still struggling to understand what is driving profitable performance.
+Sales data can show what is happening without clearly explaining **what is driving profitable performance**.
 
-Without an integrated analytical environment, it can be difficult to:
+The project was designed to help decision-makers:
 
 - Identify strong and underperforming products and sub-categories
-- Understand the relationship between sales volume and profitability
-- Evaluate how shipping costs affect retained profit
-- Compare customer segments beyond sales volume
+- Compare sales performance with profitability
+- Understand the effect of shipping costs on retained profit
+- Evaluate customer segments beyond sales volume
 - Identify growth opportunities and business risks
 - Translate analysis into practical management actions
 
@@ -33,35 +33,19 @@ Without an integrated analytical environment, it can be difficult to:
 
 ## 💡 Solution
 
-A six-page Power BI solution was designed around a guided analytical workflow:
+The report follows a guided analytical workflow:
 
-**Executive Summary**  
-↓  
-**Sub-Category Performance**  
-↓  
-**Product Performance Investigation**  
-↓  
-**Shipping & Logistics Analysis**  
-↓  
-**Customer Segment Analysis**  
-↓  
-**Executive Insights & Recommendations**
+**Executive Summary → Sub-Category Performance → Product Investigation → Shipping & Logistics → Customer Segment Analysis → Executive Insights & Recommendations**
 
-The report moves users from high-level performance monitoring to detailed investigation and finally to an executive decision-support layer.
+Users can move from high-level performance monitoring into detailed investigation and finally into an executive decision-support layer.
+
+### Intended Users
+
+**Executive Management • Sales Managers • Business Owners • Marketing Teams • Operations & Logistics Managers**
 
 ---
 
-## 👥 Intended Users
-
-- Executive Management
-- Sales Managers
-- Business Owners
-- Marketing Teams
-- Operations & Logistics Managers
-
----
-
-## 🛠️ Technologies
+## 🛠️ Technology
 
 **Microsoft Power BI • Power Query • DAX**
 
@@ -71,51 +55,43 @@ The report moves users from high-level performance monitoring to detailed invest
 
 ## 1. Executive Summary
 
+Provides a consolidated view of organizational performance using dynamic KPIs, comparative trends, category analysis, regional performance, and Top/Bottom N analysis.
+
+**Key features:** Dynamic Metric Switch • Growth Targets • Dynamic Headlines • Interactive Slicers • Top/Bottom N Analysis
+
 ![Executive Summary](assets/01-executive-summary.png)
-
-The Executive Summary provides a consolidated view of organizational performance through dynamic KPIs, comparative trends, category analysis, regional performance, and Top/Bottom N analysis.
-
-### Key features
-
-- Dynamic Metric Switch
-- Growth target comparison
-- Dynamic report headlines
-- Interactive slicers
-- Top/Bottom N analysis
 
 ---
 
 ## 2. Sub-Category Performance
 
-![Sub-Category Performance](assets/02-sub-category-performance.png)
+Evaluates sub-category performance using **Total Sales** and **Profit Margin %**.
 
-The Sub-Category Performance page evaluates business performance using **Total Sales** and **Profit Margin %**.
+Each sub-category is dynamically compared against the average Sales and Profit Margin within the active report context.
 
-Each sub-category is dynamically compared with the average Sales and average Profit Margin for the active report context.
-
-### Performance Classification Logic
+### Performance Classification
 
 | Performance Category | Sales vs Avg. Sales | Margin vs Avg. Margin | Business Interpretation |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **High Performer** | **≥ Average** | **≥ Average** | Strong sales combined with strong profitability |
 | **Opportunity** | **< Average** | **≥ Average** | Healthy profitability with room to grow sales |
 | **At Risk** | **≥ Average** | **< Average** | Strong sales volume but weaker profitability |
 | **Critical Risk** | **< Average** | **< Average** | Below-average sales and profitability |
 
-The classification responds to the report's analytical context and can change when users apply **Year, Category, Region, or Month** filters.
+The classification responds dynamically to the active analytical context and can change with **Year, Category, Region, or Month** filters.
+
+![Sub-Category Performance](assets/02-sub-category-performance.png)
 
 ---
 
 ## 3. Product Performance
 
-![Product Performance](assets/03-product-performance.png)
+Provides detailed product-level investigation through **drill-through navigation** from the Sub-Category Performance page.
 
-The Product Performance page provides detailed investigation through **drill-through navigation** from Sub-Category Performance.
+The analysis examines:
 
-It enables users to investigate:
-
-- Product-level Sales
-- Product-level Profit
+- Product Sales
+- Product Profit
 - Profit Margin
 - Opportunity products
 - Loss-making products
@@ -123,33 +99,31 @@ It enables users to investigate:
 
 > **Which products are driving the performance of the selected sub-category?**
 
+![Product Performance](assets/03-product-performance.png)
+
 ---
 
 ## 4. Shipping & Logistics Analysis
 
-![Shipping & Logistics Analysis](assets/04-shipping-logistics.png)
-
-The Shipping & Logistics page evaluates shipping modes, shipping costs, orders, and their effect on profitability.
-
-The analysis identified:
+Evaluates shipping modes, shipping costs, orders, and their effect on profitability.
 
 > **3 of 4 shipping modes were loss-making, while Standard Class was the only profitable mode in the overall reporting context.**
 
-The report also distinguishes between:
+The analysis distinguishes between:
 
 - **Profit Margin**
 - **After Shipping Profit**
 - **After Shipping Margin**
 
-This helps reveal how shipping costs can significantly reduce the profitability retained by the business.
+This highlights how shipping costs can materially reduce retained profitability.
+
+![Shipping & Logistics Analysis](assets/04-shipping-logistics.png)
 
 ---
 
 ## 5. Customer Segment Analysis
 
-![Customer Segment Analysis](assets/05-customer-segment.png)
-
-The Customer Segment page evaluates sales, profit, customer value, order value, customer count, margin, and regional segment performance.
+Evaluates customer segments using sales, profit, customer value, order value, customer count, margin, and regional performance.
 
 ### Key findings
 
@@ -157,56 +131,50 @@ The Customer Segment page evaluates sales, profit, customer value, order value, 
 - **Corporate** → Leads customer value
 - **Home Office** → Leads margin at **11.99%**
 
-The analysis shows why customer performance should be evaluated across multiple dimensions rather than sales volume alone.
+The analysis demonstrates why customer performance should be evaluated across multiple dimensions rather than sales volume alone.
+
+![Customer Segment Analysis](assets/05-customer-segment.png)
 
 ---
 
 ## 6. Executive Insights & Recommendations
 
-![Executive Insights & Recommendations](assets/06-executive-insight.png)
+The final page consolidates the major findings into an executive interpretation and recommendation layer.
 
-The final page consolidates the major findings from the report into an overall executive interpretation.
-
-Each of the first five dashboards also contains its own **Insight View**, accessible through bookmarks. These page-level views explain the specific dashboard findings, while the sixth page provides the overall business perspective.
+Each of the first five dashboards also contains a dedicated **Insight View** accessible through bookmarks, while this sixth page provides the overall business perspective.
 
 The report connects:
 
 **Performance → Investigation → Interpretation → Recommendation**
 
+![Executive Insights & Recommendations](assets/06-executive-insight.png)
+
 ---
 
-# ⚙️ Key Interactive & Technical Features
+# ⚙️ Interactive & Technical Features
 
 ### Dynamic Metric Switch
-
-A DAX-driven metric switching mechanism allows users to change the analytical focus between measures such as **Sales, Profit, and Orders**.
+DAX-driven metric switching allows supported visuals to change analytical focus between measures such as **Sales, Profit, and Orders**.
 
 ### Dynamic Report Headlines
-
-DAX-driven headlines respond to the current report context and selected filters, providing business context instead of relying only on static chart titles.
+Headlines respond to the selected report context and filters, providing business context beyond static chart titles.
 
 ### Dynamic Sub-Category Classification
-
-The four performance states shown above are implemented with DAX using average Sales and average Profit Margin benchmarks. Because the benchmarks respect the active report context, classifications can change with Year, Category, Region, and Month selections.
+DAX compares Sales and Profit Margin against active-context averages to classify sub-categories as **High Performer, Opportunity, At Risk, or Critical Risk**.
 
 ### Bookmark-Driven Insight Views
-
-Each of the first five dashboards includes a dedicated Insight View accessible through bookmarks, keeping the main analytical canvas focused while providing contextual interpretation and recommendations.
+Each of the first five dashboards includes an Insight View that provides contextual interpretation without overcrowding the main analytical canvas.
 
 ### Drill-Through Navigation
-
-Users can move from **Sub-Category → Product** without losing the analytical context of the selected performance area.
+Users can move from **Sub-Category → Product** while maintaining the selected analytical context.
 
 ### Field Parameters
-
-Field parameters provide additional flexibility by allowing supported visuals to dynamically change the analytical dimension or metric being evaluated.
+Field parameters provide additional flexibility by allowing supported visuals to dynamically change analytical dimensions or metrics.
 
 ### Interactive Tooltips
-
 Context-sensitive tooltips provide additional information without requiring users to leave the current analytical view.
 
 ### Top/Bottom N Analysis
-
 Interactive Top/Bottom N analysis identifies leading and underperforming products, customers, regions, and sub-categories.
 
 ---
@@ -215,15 +183,13 @@ Interactive Top/Bottom N analysis identifies leading and underperforming product
 
 ### Overall Performance
 
-Across the overall reporting context:
-
 - **Total Sales:** $12.64M
 - **Profit Margin:** 11.61%
 - **After Shipping Profit:** $114.64K
 - **After Shipping Margin:** 0.91%
 - **Month-over-Month Profit Growth:** 3.3%
 
-The results show positive business momentum at the reported-profit level, while the much lower After Shipping Margin highlights the significant effect of shipping costs on retained profitability.
+The results show positive reported-profit performance, while the much lower **After Shipping Margin** highlights the significant effect of shipping costs on retained profitability.
 
 ### Category Performance
 
@@ -252,8 +218,6 @@ The dynamic classification identified:
 
 The analysis demonstrates why business performance should not be evaluated through a single metric.
 
-For example:
-
 > **Consumer leads sales, while Home Office leads margin.**
 
 A strategy focused only on sales volume could therefore overlook opportunities to improve profitability.
@@ -277,30 +241,25 @@ to:
 # 🚀 Executive Recommendations
 
 ### 1. Sustain Technology Performance
-
-Continue supporting Technology while identifying successful practices that could be applied to weaker areas.
+Continue supporting Technology while identifying successful practices that can be applied to weaker areas.
 
 ### 2. Address At Risk and Critical Risk Sub-Categories
-
-Investigate pricing, discounting, product mix, demand, and cost structure to identify the drivers of weaker performance.
+Investigate pricing, discounting, product mix, demand, and cost structure to identify drivers of weaker performance.
 
 ### 3. Improve Shipping Cost Recovery
-
-Review loss-making shipping modes and consider approaches such as shipping surcharges, minimum order values, or revised shipping pricing.
+Review loss-making shipping modes and evaluate approaches such as shipping surcharges, minimum order values, or revised shipping pricing.
 
 ### 4. Balance Consumer Volume with Corporate Value
-
-Retain Consumer as the primary sales engine while developing Corporate opportunities to strengthen customer value and overall margin quality.
+Maintain Consumer as the primary sales engine while developing Corporate opportunities to strengthen customer value and margin quality.
 
 ### 5. Develop Opportunity Sub-Categories
-
 Target sub-categories with healthy margins but below-average sales through focused sales, marketing, and product strategies.
 
 ---
 
 # 📈 Business Value
 
-The dashboard provides management with a centralized decision-support environment for:
+The solution provides management with a centralized decision-support environment for:
 
 - Monitoring business performance
 - Identifying profitability drivers
@@ -311,15 +270,23 @@ The dashboard provides management with a centralized decision-support environmen
 - Identifying growth opportunities
 - Translating analysis into actionable decisions
 
-The solution moves beyond conventional KPI reporting by connecting:
+The dashboard moves beyond conventional KPI reporting by connecting:
 
 **Performance Measurement → Investigation → Interpretation → Recommendation**
 
 ---
 
+# 📚 Dataset
+
+**Global Superstore | 2011–2014**
+
+The dataset contains transactional information covering **sales, products, customers, regions, shipping methods, and profitability**.
+
+---
+
 # 📁 Repository Structure
 
-```text
+<pre>
 global-superstore-decision-intelligence/
 │
 ├── README.md
@@ -332,15 +299,7 @@ global-superstore-decision-intelligence/
     ├── 04-shipping-logistics.png
     ├── 05-customer-segment.png
     └── 06-executive-insight.png
-```
-
----
-
-# 📚 Dataset
-
-**Global Superstore | 2011–2014**
-
-The dataset contains transactional information covering sales, products, customers, regions, shipping methods, and profitability.
+</pre>
 
 ---
 
@@ -350,8 +309,8 @@ The dataset contains transactional information covering sales, products, custome
 
 **Data Analyst | Business Intelligence | Data Analytics**
 
-GitHub: **@miracleogar**
+GitHub: **[@miracleogar](https://github.com/miracleogar)**
 
-### Project Focus
+## 🎯 Project Focus
 
 **Business Intelligence • Data Analytics • Power BI • DAX • Decision Intelligence**
