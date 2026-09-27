@@ -75,8 +75,8 @@ Each sub-category is dynamically compared against the average Sales and Profit M
 | --- | --- | --- | --- |
 | **High Performer** | **≥ Average** | **≥ Average** | Strong sales combined with strong profitability |
 | **Opportunity** | **< Average** | **≥ Average** | Healthy profitability with room to grow sales |
-| **At Risk** | **≥ Average** | **< Average** | Strong sales volume but weaker profitability |
-| **Critical Risk** | **< Average** | **< Average** | Below-average sales and profitability |
+| **Weak Margin** | **≥ Average** | **< Average** | Strong sales volume but weaker profitability |
+| **Low Performer** | **< Average** | **< Average** | Below-average sales and profitability |
 
 The classification responds dynamically to the active analytical context and can change with **Year, Category, Region, or Month** filters.
 
@@ -160,7 +160,7 @@ DAX-driven metric switching allows supported visuals to change analytical focus 
 Headlines respond to the selected report context and filters, providing business context beyond static chart titles.
 
 ### Dynamic Sub-Category Classification
-DAX compares Sales and Profit Margin against active-context averages to classify sub-categories as **High Performer, Opportunity, At Risk, or Critical Risk**.
+DAX compares Sales and Profit Margin against active-context averages to classify sub-categories as **High Performer, Opportunity, Weak Margin, or Low Performer**.
 
 ### Bookmark-Driven Insight Views
 Each of the first five dashboards includes an Insight View that provides contextual interpretation without overcrowding the main analytical canvas.
@@ -201,8 +201,8 @@ The dynamic classification identified:
 
 - **3 High Performers**
 - **6 Opportunities**
-- **6 At Risk**
-- **2 Critical Risk**
+- **6 Weak Margin**
+- **2 Low Performer**
 
 ### Shipping Performance
 
@@ -243,7 +243,7 @@ to:
 ### 1. Sustain Technology Performance
 Continue supporting Technology while identifying successful practices that can be applied to weaker areas.
 
-### 2. Address At Risk and Critical Risk Sub-Categories
+### 2. Address Weak Margin and Low Performer Sub-Categories
 Investigate pricing, discounting, product mix, demand, and cost structure to identify drivers of weaker performance.
 
 ### 3. Improve Shipping Cost Recovery
